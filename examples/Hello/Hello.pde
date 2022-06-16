@@ -1,12 +1,12 @@
-import template.library.*;
+import gsoc.ml.*;
 
-HelloLibrary hello;
+MLTest ml;
 
 void setup() {
   size(400,400);
   smooth();
   
-  hello = new HelloLibrary(this);
+  ml = new MLTest(this);
   
   PFont font = createFont("",40);
   textFont(font);
@@ -15,5 +15,5 @@ void setup() {
 void draw() {
   background(0);
   fill(255);
-  text(hello.sayHello(), 40, 200);
+  text(ml.sayHello(), 40, 200);
 }
